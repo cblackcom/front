@@ -4,6 +4,9 @@
   "description": "",
   "bin": "install.js",
   "license": "MIT",
+  "files": [
+    "template/.gitignore"
+  ],
   "dependencies": {
     "ncp": "^2.0.0"
   }
