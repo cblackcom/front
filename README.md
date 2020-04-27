@@ -1,6 +1,7 @@
 # @cblackcom/front
 
-It's my front-end development starter kit—
+My personal web app front-end starter kit—
+
 * Laravel Mix
 * React
 * SASS
@@ -10,4 +11,13 @@ You did it.  Cheers.  🥃
 
 ## Installation
 
-TODO
+```bash
+# Create and enter a new directory for your project
+mkdir my-new-project
+cd my-new-project
+
+# Go
+npx github:cblackcom/front
+```
+
+After installation, check out `README.md` for the last couple of things.
