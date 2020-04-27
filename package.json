@@ -1,5 +1,6 @@
 {
   "name": "@cblackcom/front",
+  "version": "1.0.0",
   "description": "",
   "bin": "install.js",
   "license": "MIT",
