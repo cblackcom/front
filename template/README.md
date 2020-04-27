@@ -1,14 +1,14 @@
 # @cblackcom/front Template
 
+## Tweak some files
+* Delete `.npmignore`
+* Move `package.json.default` to `package.json` and hack accordingly
+
 ## Install depenencies
 ```bash
 npm i laravel-mix cross-env copy-webpack-plugin --save-dev
 npm i react react-dom bootstrap
 ```
-
-## Configure package.json
-
-Copy `package.json.default` to `package.json` and hack accordingly.
 
 ## Use it
 
