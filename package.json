@@ -1,0 +1,9 @@
+{
+  "name": "@cblackcom/front",
+  "description": "",
+  "bin": "install.js",
+  "license": "MIT",
+  "dependencies": {
+    "ncp": "^2.0.0"
+  }
+}
