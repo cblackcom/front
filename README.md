@@ -1,6 +1,7 @@
 # @cblackcom/front
 
-My personal web app front-end starter kit.  Start developing a modern React app quickly, with minimal configuration.
+My personal web app front-end starter kit.  
+Start developing a modern React app quickly, with minimal configuration.
 
 * React
 * SASS
