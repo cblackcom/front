@@ -2,11 +2,17 @@
 
 My personal web app front-end starter kit—
 
-* Laravel Mix
 * React
 * SASS
-* Bootstrap Reboot
-* Asset cache busting without dynamic scripting language
+* [Laravel Mix](https://laravel-mix.com)
+* [Bootstrap Reboot](https://getbootstrap.com/docs/4.1/content/reboot/)
+* Asset cache busting without using a dynamic scripting language
+
+It's similar to the idea behind [create-react-app](https://create-react-app.dev), but way slimmed down and ready for customization with no `eject` process.  Just install, and then fire up a local dev server—
+
+```bash
+npm run hot
+```
 
 You did it.  Cheers.  🥃
 
