@@ -19,8 +19,12 @@ You did it.  Cheers.  🥃
 
 ## Installation
 
+You don't need to check this repo out.
+
 If you don't already have modern node on your machine, grab it with `nvm`
 https://github.com/nvm-sh/nvm
+
+Then create a new project—
 
 ```bash
 # Create and enter a new directory for your project
@@ -31,4 +35,4 @@ cd my-new-project
 npx github:cblackcom/front
 ```
 
-After installation, check out `README.md` for the last couple of things.
+After installation, check out the `README.md` in your new project for the last couple of things.
