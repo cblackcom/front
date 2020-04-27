@@ -1,7 +1,7 @@
 # @cblackcom/front Template
 
 ## Tweak some files
-* Delete `.npmignore`
+* Delete `.npmignore` if it exists
 * Move `package.json.default` to `package.json` and hack accordingly
 
 ## Install depenencies
