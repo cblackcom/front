@@ -1,3 +1,2 @@
-# anything here must also be listed in .npmignore
 /node_modules
 /template/package*.json

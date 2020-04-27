@@ -5,7 +5,12 @@
   "bin": "install.js",
   "license": "MIT",
   "files": [
-    "template/.gitignore"
+    "template/src",
+    "template/.gitignore",
+    "template/package.json.default",
+    "template/README.md",
+    "template/webpack.mix.js",
+    "install.js"
   ],
   "dependencies": {
     "ncp": "^2.0.0"

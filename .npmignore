@@ -1,3 +1,0 @@
-# anything here must also be listed in .gitignore
-/node_modules
-/template/package*.json
