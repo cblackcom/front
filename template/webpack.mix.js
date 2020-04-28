@@ -26,5 +26,13 @@ mix.webpackConfig({
 					.replace(/app.js/g, 'app.js?' + versionString())
 			}
 		}])
-	]
+	],
+	// https://webpack.js.org/configuration/dev-server
+	devServer: {
+		inline: true,
+		port: 8080,
+		// make it publicly available
+		// host: '0.0.0.0',
+		// disableHostCheck: true,
+	},
 })
