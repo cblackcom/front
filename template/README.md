@@ -5,13 +5,16 @@
 
 ## Install depenencies
 ```bash
-npm i laravel-mix cross-env copy-webpack-plugin --save-dev
+npm i laravel-mix cross-env copy-webpack-plugin@5 --save-dev
 npm i react react-dom bootstrap
 ```
 
 ## Use it
 
 ```bash
+# create an empty public directory to hold the compiled files
+mkdir public
+
 # watch for changes and recompile
 npm run watch
 
