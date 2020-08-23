@@ -10,7 +10,10 @@ const versionString = () => crypto.randomBytes(8).toString('hex')
 mix.setPublicPath('public')
 
 mix.react('src/app.jsx', 'public/')
-mix.sass('src/app.scss', 'public/')
+mix.sass('src/app.scss', 'public/').options({
+	// https://laravel.com/docs/7.x/mix#url-processing
+	processCssUrls: false,
+})
 
 mix.webpackConfig({
 	plugins: [
@@ -35,4 +38,7 @@ mix.webpackConfig({
 		// host: '0.0.0.0',
 		// disableHostCheck: true,
 	},
+	watchOptions: {
+		ignored: /node_modules/
+    },
 })
