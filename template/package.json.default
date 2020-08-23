@@ -1,7 +1,5 @@
 {
-  "name": "",  // name goes here
-  "version": "1.0.0",
-  "license": "UNLICNSED",
+  "private": true,
   "scripts": {
 	  // get these from https://laravel-mix.com/docs/5.0/installation
   }
