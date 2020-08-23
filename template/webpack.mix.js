@@ -40,5 +40,5 @@ mix.webpackConfig({
 	},
 	watchOptions: {
 		ignored: /node_modules/
-    },
+	},
 })
