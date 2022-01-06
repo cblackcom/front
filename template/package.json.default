@@ -1,6 +1,3 @@
 {
-  "private": true,
-  "scripts": {
-	  // get these from https://laravel-mix.com/docs/5.0/installation
-  }
+  "private": true
 }

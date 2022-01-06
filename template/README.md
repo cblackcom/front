@@ -1,11 +1,11 @@
 # @cblackcom/front Template
 
 ## Tweaks
-* Move `package.json.default` to `package.json` and hack accordingly
+* Move `package.json.default` to `package.json`
 
 ## Install depenencies
 ```bash
-npm i laravel-mix@5 cross-env copy-webpack-plugin@5 --save-dev
+npm i laravel-mix@6 copy-webpack-plugin@10 --save-dev
 npm i react react-dom bootstrap
 ```
 
@@ -16,15 +16,15 @@ npm i react react-dom bootstrap
 mkdir public
 
 # watch for changes and recompile
-npm run watch
+npx mix watch
 
 # hot reload local development server
-npm run hot
+npx mix watch --hot
 
 # compile development version
-npm run dev
+npx mix
 
 # compile production version
 # (includes cache busting on index.html)
-npm run production
+npx mix --production
 ```
