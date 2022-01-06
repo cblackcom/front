@@ -31,6 +31,10 @@ Then create a new project—
 mkdir my-new-project
 cd my-new-project
 
+# Optional: drop your npm cache to make sure you receive latest version
+# https://github.com/npm/cli/issues/2329
+rm -Rf ~/.npm
+
 # Go
 npx github:cblackcom/front
 ```
