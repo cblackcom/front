@@ -9,11 +9,14 @@ const versionString = () => crypto.randomBytes(8).toString('hex')
 
 mix.setPublicPath('public')
 
-mix.js('src/app.jsx', 'public/').react()
-mix.sass('src/app.scss', 'public/').options({
-	// https://laravel.com/docs/7.x/mix#url-processing
-	processCssUrls: false,
-})
+mix.js('src/App.jsx', 'public/').react()
+
+// if you want an actual CSS file,
+// uncomment these lines
+// mix.sass('src/app.scss', 'public/').options({
+// 	// https://laravel.com/docs/7.x/mix#url-processing
+// 	processCssUrls: false,
+// })
 
 mix.webpackConfig({
 	plugins: [
@@ -27,8 +30,10 @@ mix.webpackConfig({
 					transform(content) {
 						return content
 							.toString()
-							.replace(/app.css/g, 'app.css?' + versionString())
-							.replace(/app.js/g, 'app.js?' + versionString())
+							// if you want an actual CSS file,
+							// uncomment this line
+							// .replace(/app.css/g, 'app.css?' + versionString())
+							.replace(/App.js/g, 'App.js?' + versionString())
 					}
 				}
 			]

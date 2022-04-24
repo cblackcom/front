@@ -1,12 +1,13 @@
 # @cblackcom/front Template
 
 ## Tweaks
+* Move `gitignore` to `.gitignore`
 * Move `package.json.default` to `package.json`
 
 ## Install depenencies
 ```bash
 npm i laravel-mix@6 copy-webpack-plugin@10 --save-dev
-npm i react react-dom bootstrap
+npm i react react-dom react-redux @reduxjs/toolkit @mui/material @emotion/react @emotion/styled react-router-dom
 ```
 
 ## Use it
