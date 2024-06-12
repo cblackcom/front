@@ -12,7 +12,7 @@ My personally curated web front-end starter template, now powered by Vite.  It's
 
 ```bash
 # https://vitejs.dev/guide/#community-templates
-npx degit cblackcom/front my-new-app
+npx degit cblackcom/front/template-vite my-new-app
 cd my-new-app
 
 npm install
