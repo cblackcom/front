@@ -1,6 +1,11 @@
+import { CSSObject } from '@emotion/react'
 import '@fontsource/ibm-plex-mono'
-import type { AppColors } from './theme'
-import { Theme } from '@emotion/react'
+
+export enum AppColor {
+	White = 'white',
+	Black = 'black',
+	Transparent = 'transparent',
+}
 
 const colors: AppColors = {
 	white: '#ffffff',
@@ -8,9 +13,11 @@ const colors: AppColors = {
 	transparent: 'transparent',
 }
 
-// const fontFamily = "Roboto, sans-serif"
+export type AppColors = {
+	[name in AppColor]: string
+}
 
-export const globalStyle = {
+export const globalStyle: CSSObject = {
 	'html': {
 		backgroundColor: colors.black,
 	},
@@ -25,10 +32,17 @@ export const globalStyle = {
 	},
 }
 
-const spacingPx = 8
+// Quick replacement of mui's theme.spacing() function
+// Specify CSS measurements in .5x or 1x multiples of 8px units
+type SpacingFunc = (...n: number[]) => string
+const spacing: SpacingFunc = (...n) => n.map(n => `${n * 8}px`).join(' ')
 
-export const defaultTheme: Theme = {
-	spacingPx,
-	spacing: (...n: number[]): string => n.map(n => `${n * spacingPx}px`).join(' '),
+export interface AppTheme {
+	colors: AppColors
+	spacing: SpacingFunc
+}
+
+export const defaultTheme: AppTheme = {
 	colors,
+	spacing,
 }
