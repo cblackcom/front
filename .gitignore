@@ -1,0 +1,3 @@
+# don't commit template lockfiles
+/template-vite/package-lock.json
+/template-vite/pnpm-lock.yaml

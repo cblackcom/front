@@ -1,10 +1,10 @@
 # @cblackcom/front
 
-My personally curated web front-end starter template, now powered by Vite.  It's our reference baseline at [PNDLM](https://pndlm.com) for new web apps.
+My personally curated web front-end starter template, our reference baseline at [PNDLM](https://pndlm.com) for new web apps.
 
 * React Typescript
-* Redux Toolkit
 * Emotion
+* Redux Toolkit
 * React Router
 * Vite
 
@@ -23,4 +23,9 @@ npm run dev
 
 Review latest `create-vite` templates and apply updates:
 * https://vitejs.dev/guide/#scaffolding-your-first-vite-project
-* https://github.com/vitejs/vite/tree/main/packages/create-vite
+* https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts
+
+Then:
+```
+pnpm update --latest
+```
