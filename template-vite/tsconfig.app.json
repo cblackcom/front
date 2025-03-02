@@ -20,7 +20,8 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
-		"noUncheckedSideEffectImports": true
+		// this currently causes type error on fontsource import
+		// "noUncheckedSideEffectImports": true
 	},
 	"include": ["src"]
 }
