@@ -1,9 +1,8 @@
-import React from 'react'
 import styled from '@emotion/styled'
 import { ThemeProvider } from '@emotion/react'
 import { defaultTheme } from './style'
 import { useAppSelector } from './redux/storeTypes'
-import signatureSvg from '/signature.svg'
+import pndlmLogoSvg from '/4row-white.svg'
 
 const InterfaceContainer = styled.div(({theme}) => ({
 	backgroundColor: theme.colors.black,
@@ -14,18 +13,18 @@ const InterfaceContainer = styled.div(({theme}) => ({
 	flexDirection: 'column',
 	alignItems: 'center',
 	justifyContent: 'center',
-	rowGap: theme.spacing(2),
+	rowGap: '1rem',
 }))
 
 const Signature = styled.img({
-	width: '240px',
+	width: '15rem',
 })
 
 const GlassEmoji = styled.div({
-	fontSize: '2em',
+	fontSize: '2rem',
 })
 
-const AppRoot = React.memo(() => {
+const AppRoot = () => {
 	const booted = useAppSelector(state => state.app.booted)
 
 	if(!booted) {
@@ -35,12 +34,12 @@ const AppRoot = React.memo(() => {
 	return (
 		<ThemeProvider theme={defaultTheme}>
 			<InterfaceContainer>
-				<Signature src={signatureSvg} alt="CBLACK" />
+				<Signature src={pndlmLogoSvg} alt="PNDLM" />
 				<GlassEmoji>🥃</GlassEmoji>
-				You did it.  Cheers.
+				Cheers!  Let's get started...
 			</InterfaceContainer>
 		</ThemeProvider>
 	)
-})
+}
 
 export default AppRoot

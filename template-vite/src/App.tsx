@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { Provider as ReduxProvider } from 'react-redux'
 import { store } from './redux/store'
 import { Global as EmotionGlobal } from '@emotion/react'
@@ -7,7 +7,7 @@ import { appBoot } from './redux/appReducer'
 import AppRoot from './AppRoot'
 import { globalStyle } from './style'
 
-const App = React.memo(() => {
+const App = () => {
 	useEffect(() => {
 		store.dispatch(appBoot())
 	}, [])
@@ -22,6 +22,6 @@ const App = React.memo(() => {
 			</BrowserRouter>
 		</ReduxProvider>
 	)
-})
+}
 
 export default App
