@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { ThemeProvider } from '@emotion/react'
 import { defaultTheme } from './style'
-import { useAppSelector } from './redux/storeTypes'
+import { useAppSelector } from './redux/storeHooks'
 import pndlmLogoSvg from '/4row-white.svg'
 
 const InterfaceContainer = styled.div(({theme}) => ({
