@@ -1,31 +1,26 @@
 # @cblackcom/front
 
-My personally curated web front-end starter template, our reference baseline at [PNDLM](https://pndlm.com) for new web apps.
+This is my opinionated AI prompt for creating a fresh React web application, and is our reference baseline at [PNDLM](https://pndlm.com) for new modern web apps.  It is based on the [Vite](https://vite.dev) team's excellent `react-ts` template.
 
-* React Typescript
-* Emotion
-* Redux Toolkit
-* React Router
-* Vite
+- React
+- Emotion
+- Redux Toolkit
+- React Router
+- Font Awesome
 
-## Installation
+## Instructions
 
+Create a new git repo or `cd` to the one you already have—
 ```bash
-# https://vitejs.dev/guide/#community-templates
-npx degit cblackcom/front/template-vite my-new-app
-cd my-new-app
-
-npm install
-npm run dev
+mkdir new-project
+cd new-project
+git init
 ```
 
-## Note to self: Updating this template
+Now, aim Claude Code at it and say—
 
-Review latest `create-vite` templates and apply updates:
-* https://vitejs.dev/guide/#scaffolding-your-first-vite-project
-* https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts
+```text
+Claude, please create a new web application according to the prompt located at https://github.com/cblackcom/front/blob/main/PROMPT.md
+```
 
-Then:
-```
-pnpm update --latest
-```
+Enjoy!
